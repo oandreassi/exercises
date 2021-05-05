@@ -1,0 +1,58 @@
+/* APRENDENDO CSS EXERNO*/
+
+/* 
+
+    #elemento -> id
+    .elemento -> class
+    
+*/
+button
+{
+    border-radius: 100px;
+    background-color: #4A0100;
+    color: white;
+}
+
+#tituloimg
+{
+    color: #03719C;    
+}
+
+.tit
+{
+    
+        font-weight: bold;
+        font-size: 20px;
+        color: red;
+    
+}
+.borda1{
+    border: 3px solid #4A0100;
+    border-radius: 10   px;
+    /* solid, dotted, dashed, double, groove, noborder */
+}
+
+nome_do_elemento
+{
+
+}
+#id_do_elemento
+{
+
+}
+.class_do_elemento
+{
+
+}
+elemento, outroelemento
+{
+
+}
+elemento outroelemento
+{
+
+}
+#elemento, .elemento .elemento
+{
+
+}

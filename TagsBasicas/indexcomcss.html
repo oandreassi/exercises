@@ -6,36 +6,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags Básicas HTML</title>
+    <title>Tags Básicas HTML e CSS</title>
+    <link rel="stylesheet" href="cssExterno.css">
+    <!-- CSS interno -->
+    <style>
+        a {
+            font-size: large;
+            font-weight: bold;
+            font-family: Arial;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <h1>Título da Página</h1>
-    <h2>Sub-título da página</h2>
+    <!-- CSS inline cor do titulo-->
+    <h1 style="color: red;">Título da Página</h1>
+    <h2 style="color: green;">Sub-título da página</h2>
     <h3>Sub-sub título da página</h3>
     <h6>Texto com H6</h6>
 
-    <p>Texto com a tag P</p>
+    <p class="borda1">Texto com a tag P</p>
     <p>Mais uum texto com a tag P</p>
     <hr />
 
-    <h4> LINKS COM A TAG A </h4>
+    <h4 class="tit"> LINKS COM A TAG A </h4>
     <a href="http://www.google.com"> Link Google </a>
     <hr />
 
-    <h4>Tag IMG</h4>
-    <p>Olho colorido 200x133</p>
-    <img src="olho-colorido.jpg" alt="Olho Colorido">
+    <h4 class="tit">Tag IMG</h4>
+    <p id="tituloimg">Olho colorido 200x133</p>
+    <!-- CSS inline no width-->
+    <img src="olho-colorido.jpg" alt="Olho Colorido" style="width: 300px">
     <hr />
 
-    <h4>Tag Button </h4>
-    <button>CIQUE AQUI</button>
+    <h4 class="tit">Tag Button </h4>
+    <button>CLIQUE AQUI</button>
     <button>CLIQUE AQUI</button>
     <hr/>
 
-    <h4>Listas com a tag UL e Li</h4>
+    <h4 class="tit ">Listas com a tag UL e Li</h4>
     <h3>LISTA DE BOLO</h3>
     <!--Lista desordenada com UL -->
     <ul>
@@ -54,6 +65,9 @@
         <li>Etc...</li>
     </ol>
     <hr/>
+
+    
+
 </body>
 
 </html>
