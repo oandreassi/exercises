@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Testando fonts externas -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+
+    <title>Listas com Html</title>
+
+    <style>
+        p {
+            color: red;
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        table {
+            width: 500px;
+        }
+        h2,th, td{
+            font-family: 'Roboto';
+        }
+        
+        table thead{
+            background-color: grey  ;
+        }
+        tbody tr:hover{
+            background-color: #00ff00;
+        }
+      
+        tbody tr:nth-child(even)
+        {
+            background-color: #eee;
+        }
+        #inpnome::placeholder,input[type="password"]::placeholder{
+            color: #eee;
+        }
+        input[type="text"],input[type="password"]
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: 0;
+            width: 400px;
+        }
+        label{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <p>LISTAS</p>
+    <!-- Lista ordenada tag <ol>, lista desordenada tag <ul>-->
+    <ul type="1">
+        <br>
+        <li>Cafe</li>
+        <li>Chá
+            <ul>
+                <li>Chá Preto</li>
+                <li>Chá Verde</li>
+            </ul>
+        </li>
+        <li>Leite</li>
+        <li>Bolacha</li>
+        <li>Macarrao</li>
+    </ul>
+
+    <!-- TABELAS-->
+    <P>TABELAS</P>
+    <table border="0">
+        <thead>
+            <th>ITEM 1 </th>
+            <th>ITEM 2</th>
+        </thead>
+        <tbody>
+            <td>...</td>
+            <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>....</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>....</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>....</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>....</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>....</td>
+                <td>...</td>
+            </tr>   
+        </tbody>
+    </table>
+    <br>
+    <p>FORMULÁRIO COM INPUTS</p>
+    
+
+    <form action="teste.html" method="GET">
+        <br><br>
+
+        <label >
+            Nome do Usuario <br>
+            <input type="text" name="usuario" placeholder="Nome do Usuario" id="inpnome">
+        </label>
+        <label for="pass">Digite sua senha</label>
+        <input type="password" placeholder="Senha do Usuario" id="pass"><br>
+        
+        <input type="checkbox">
+        <input type="radio" name="sexo"> <!-- nome iguais para marcar apenas 1-->
+        <input type="radio" name="sexo">
+        <input type="radio" name="sexo"> 
+        <input type="submit"> <br> 
+        <input style="margin-top: 5px;" type="email" placeholder="input email">
+
+
+    </form>
+
+    <h6>INPUTS DO HTML5</h6>
+    <form action="teste.html" method="GET">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local"> <!-- Escolhe data e tempo-->
+        <input type="number">
+        <input type="range">
+
+    </form><br>
+    <h6>SELECT</h6>
+    
+    <select name="ordenacao" id="">
+        <option></option> 
+        <!--Para a primeira ir selecionada sem nada, ou usar o select dentro da tag option para selec o def-->
+        <option value="1">Mais vendidos</option>
+        <option value="2">Recentes</option>
+        <option value="3">Nome</option>
+        
+    </select>
+    <br><br>
+    <textarea name="descricao" id=""></textarea>
+    <br><br>
+    <input type="hidden" name="" id="">
+
+
+
+
+</body>
+
+</html>

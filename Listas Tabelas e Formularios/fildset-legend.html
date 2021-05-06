@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>Fieldset e Legend </title>
+    
+    <style>
+        fieldset{
+            background-color: #eee;
+            margin: 10px 0px 10px 0px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        legend{
+            border-radius: 3px;
+            margin: 0px 5px 0px 5px;
+            letter-spacing: 1px;
+            font-family: 'Montserrat';
+            padding: 5px;   
+            background-color: mediumpurple;
+            text-shadow: 1px black;
+            color: white;
+        }
+        label{
+            font-family: 'Roboto';
+        }
+        #btnsubmit{
+            width: 100px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <form action="teste.js" method="POST" enctype="multipart/form-data">
+        <!-- Validação nativa com required e min e max -->
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro nome <br>
+                <input type="text" name="name" id="" required minlength="4" maxlength="10"> 
+            </label><br>
+            <label>
+                Sobrenome <br>
+                <input type="text" name="lastname" id="" required>
+            </label><br><br>
+            <label>
+                <!-- Validando tipo de arquivo com accept-->
+                Foto 3x4 <br>
+                <input type="file" name="photo" id="" accept="image/*">
+            </label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da Empresa</legend>
+            <label>
+                Empresa <br>
+                <input type="text" name="company" id="">
+            </label><br>
+            <label>
+                Cargo na Empresa <br>
+                <input type="text" name="jobcompany" id="">
+            </label><br>
+        </fieldset>
+        <input type="submit" id="btnsubmit">
+
+    </form>
+</body>
+</html>
