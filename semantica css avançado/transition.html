@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <title>Transition</title>
+    <style>
+        .exemplotran{
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            margin: 5em ;
+            transition: all 300ms linear;
+        }
+        .exemplotran:hover{
+            background-color: #999;
+        }
+        a{
+            color: #ccc;
+            transition: all 300ms linear;
+        }
+        a:hover{
+            color: red;
+        }
+        #nome{
+            transition: all 500ms linear;
+            border: 5px solid black;
+        }
+        #nome:focus{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+     <div class="exemplotran"></div>
+     <a href="https://www.google.com" class="linkii"">Link Goole</a>
+     <input type="text" name="nome" id="nome">
+
+</body>
+</html>
